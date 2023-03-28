@@ -1,7 +1,7 @@
 let button = document.getElementById("button");
 let citation = document.getElementById("citation");
 
-button.onclick = btn 
+button.onclick = btn;
 
 function btn() {
     let quote = Math.floor(Math.random() * 6);
@@ -22,7 +22,7 @@ function btn() {
             citation.innerHTML = "«Rien n'est plus semblable à l'identique que ce qui est pareil à la même chose» Pierre Dac"
             break;
         case 5:
-            citation.innerHTML = " «T'es sérrieux toi ?!!» Clément Da Silva"
+            citation.innerHTML = " «T'es sérieux toi ?» Clément Da Silva"
             break;
     }
     
