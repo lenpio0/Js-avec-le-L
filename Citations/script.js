@@ -29,7 +29,7 @@ function btn() {
             break;
         case 5:
             citation.innerHTML = "«T'es sérieux toi ?»"
-            auteur.innerHTML = "Clément Da Silva"
+            auteur.innerHTML = "Clément de Sousa"
             break;
     }
 }
