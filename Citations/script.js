@@ -4,7 +4,7 @@ let citation = document.getElementById("citation");
 button.onclick = btn;
 
 function btn() {
-    let quote = Math.floor(Math.random() * 6);
+    let quote = Math.floor(Math.random() * 7);
     switch (quote){
         case 0:
             citation.innerHTML = "« Ta mère c'est de l'or, ne la fais pas pleurer pour de l'argent. » Le J"
@@ -24,6 +24,9 @@ function btn() {
         case 5:
             citation.innerHTML = " «T'es sérieux toi ?» Clément Da Silva"
             break;
+        case 6:
+            citation.innerHTML = "«Ne vois pas ça comme un gros mur, mais comme un escalier.»"
+            auteur.innerHTML = "L'autre Clément"
+            break;
+        }
     }
-    
-}
