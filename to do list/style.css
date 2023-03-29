@@ -1,0 +1,32 @@
+@import url(https://fonts.bunny.net/css?family=amatic-sc:700);
+h1 {
+    font-family: 'Amatic SC', handwriting;
+    
+}
+.enbien{
+    text-align: center; 
+    margin-top: 6em;
+}
+.content{
+    padding-top: 1em;
+    margin: auto;
+    min-height: 32em;
+    max-width: 32em;
+    border: solid 1px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.377);
+}
+form{
+    display: flex;
+    margin-left: 4em;
+}
+#mission{
+    width: 24em;
+    height: 2em;
+    box-shadow: 40px 5px 15px rgba(0, 0, 0, 0.199); 
+}
+#bouton{
+    background-image: url(img/IcRoundKeyboardArrowDown.svg);
+    height: 33px;
+    width: 35px;
+    cursor: pointer;
+}
