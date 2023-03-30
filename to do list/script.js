@@ -16,14 +16,14 @@ function valid(){
     liste.appendChild(newDiv);
     
     const newBtn = document.createElement('button');
-    newBtn.setAttribute("id", "taskbtn" + id);
+    // newBtn.setAttribute("id", "taskbtn" + id);
     newBtn.textContent = "finito";
-    newBtn.addEventListener("click", function() {
-        //liste.removeChild(newDiv);
-        //liste.removeChild(newBtn);
-        newDiv.classList.add("line-through");
-    })
+    newBtn.onclick = () => line(newDiv);
     liste.appendChild(newBtn);
 
     id ++;
+}
+
+function line(element) {
+    element.classList.add("line-through");
 }
