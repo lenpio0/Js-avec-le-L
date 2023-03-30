@@ -5,7 +5,7 @@ let auteur = document.getElementById("auteur");
 button.onclick = btn;
 
 function btn() {
-    let quote = Math.floor(Math.random() * 7);
+    let quote = Math.floor(Math.random() * 8);
     switch (quote){
         case 0:
             citation.innerHTML = "«Ta mère c'est de l'or, ne la fais pas pleurer pour de l'argent.»"
@@ -34,6 +34,10 @@ function btn() {
         case 6:
             citation.innerHTML = "«Ne vois pas ça comme un gros mur, mais comme un escalier.»"
             auteur.innerHTML = "L'autre Clément"
+            break;
+        case 7:
+            citation.innerHTML = "«Le J c'est le S et rien qu'on fait du JS»"
+            auteur.innerHTML = "Champion anonyme"
             break;
         }
     }

@@ -1,5 +1,27 @@
 @import url(https://fonts.bunny.net/css?family=beth-ellen:400);
 
+#titre{
+    margin-top: 4em;
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: bolder;
+}
 #citation{
     font-family: 'Beth Ellen', handwriting; 
+}
+.enbien{
+    text-align: center;
+    margin-top: 8%;
+}
+#button{
+    margin: 4em;
+    border: solid 1px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#button:active{
+    background-color: white;
+    color: grey;
 }
