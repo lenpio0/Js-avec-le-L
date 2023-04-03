@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <p id="carte1">truc</p>
-    <p id="carte2">truc</p>
-    <p id="carte3">chose</p>
-    <p id="carte4">chose</p>
-    <p id="carte5">machin</p>
-    <p id="carte6">machin</p>
-    <p id="carte7">chouette</p>
-    <p id="carte8">chouette</p>
+<body class="flex flex-wrap">
+    <div id="wall" class="h-[100vh] w-[100vw] fixed z-30 hidden"></div>
+    <p id="carte1" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">truc</p>
+    <p id="carte2" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">truc</p>
+    <p id="carte3" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">chose</p>
+    <p id="carte4" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">chose</p>
+    <p id="carte5" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">machin</p>
+    <p id="carte6" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">machin</p>
+    <p id="carte7" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">chouette</p>
+    <p id="carte8" class="hidden border border-solid border-black block h-16 w-16 text-white bg-contain">chouette</p>
+    <button id="start">Start</button>
+    <p id="win" class="hidden fixed top-[50vh] left-[50vw] font-[60px]">WIN !</p>
 </body>
 </html>
