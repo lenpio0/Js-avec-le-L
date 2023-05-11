@@ -22,7 +22,7 @@ form{
 #mission{
     width: 24em;
     height: 2em;
-    box-shadow: 40px 5px 15px rgba(0, 0, 0, 0.199); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.199); 
 }
 #bouton{
     background-image: url(img/IcRoundKeyboardArrowDown.svg);
