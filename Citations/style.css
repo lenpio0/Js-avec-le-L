@@ -25,3 +25,14 @@
     background-color: white;
     color: grey;
 }
+.menu {
+    position: fixed;
+    left: 112px;
+    bottom: 80px;
+    border: 2px black solid;
+    border-radius: 6px;
+    padding:8px 16px;
+    background-color: rgb(226 232 240);
+    text-decoration: none;
+    color: black;
+}
