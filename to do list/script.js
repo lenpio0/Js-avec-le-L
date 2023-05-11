@@ -3,27 +3,28 @@ let liste = document.getElementById('liste');
 
 bouton.onclick = valid;
 
-let id = 0;
-let tasks = [];
-
 function valid(){
     let mission = document.getElementById("mission").value;
-    document.getElementById("mission").value = null;
-    liste = document.getElementById('liste');
-    const newDiv = document.createElement('li');
-    newDiv.setAttribute("id", "task" + id);
-    newDiv.textContent = mission;
-    liste.appendChild(newDiv);
-    
-    const newBtn = document.createElement('button');
-    newBtn.setAttribute("id", "taskbtn" + id);
-    newBtn.textContent = "finito";
-    newBtn.addEventListener("click", function() {
-        //liste.removeChild(newDiv);
-        //liste.removeChild(newBtn);
-        newDiv.classList.add("line-through");
-    })
-    liste.appendChild(newBtn);
-
-    id ++;
+    if (mission != "") {
+        document.getElementById("mission").value = null;
+        liste = document.getElementById('liste');
+        const newTask = document.createElement('li');
+        newTask.setAttribute("class", "task");
+        newTask.textContent = mission;
+        liste.appendChild(newTask);
+        
+        const newBtn = document.createElement('button');
+        newBtn.setAttribute("class", "taskbtn");
+        newBtn.textContent = "finito";
+        newBtn.addEventListener("click", function() {
+            if (newTask.classList.contains("line-through")) {
+                liste.removeChild(newTask);
+                liste.removeChild(newBtn);
+            }
+            else {
+                newTask.classList.add("line-through");
+            }
+        })
+        liste.appendChild(newBtn);
+    }
 }
