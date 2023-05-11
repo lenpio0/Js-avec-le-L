@@ -36,9 +36,9 @@ function start() {
     carte6.classList.remove('hidden');
     carte7.classList.remove('hidden');
     carte8.classList.remove('hidden');
-    // randomOrder(); 
-    check = [];
+    randomOrder(); 
     cartes.forEach(function(carte) {
+        check = [];
         let order = Math.floor(Math.random() * 8);
         if (check.includes(order) == false) {
             check.push(order);
@@ -69,13 +69,21 @@ function restart() {
     pioche2 = 0;
     startBtn.classList.remove('hidden');
     carte1.classList.add('hidden', 'bg-none');
+    carte1.classList.remove('bg-[url(images/spidermacron.webp)]')
     carte2.classList.add('hidden', 'bg-none');
+    carte2.classList.remove('bg-[url(images/spidermacron.webp)]')
     carte3.classList.add('hidden', 'bg-none');
+    carte3.classList.remove('bg-[url(images/drake_en_mode_donuts.webp)]')
     carte4.classList.add('hidden', 'bg-none');
+    carte4.classList.remove('bg-[url(images/drake_en_mode_donuts.webp)]')
     carte5.classList.add('hidden', 'bg-none');
+    carte5.classList.remove('bg-[url(images/finn_jake_hood.webp)]')
     carte6.classList.add('hidden', 'bg-none');
+    carte6.classList.remove('bg-[url(images/finn_jake_hood.webp)]')
     carte7.classList.add('hidden', 'bg-none');
+    carte7.classList.remove('bg-[url(images/mickauto.webp)]')
     carte8.classList.add('hidden', 'bg-none');
+    carte8.classList.remove('bg-[url(images/mickauto.webp)]')
     carte1.classList.replace('border-green-600', 'border-black');
     carte2.classList.replace('border-green-600', 'border-black');
     carte3.classList.replace('border-green-600', 'border-black');
@@ -89,7 +97,6 @@ function restart() {
 
 function randomOrder() {
 
-    
 }
 
 function resetCard1() {
