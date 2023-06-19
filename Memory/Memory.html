@@ -7,22 +7,24 @@
     <title>Memory</title>
     <script src="script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=arvo:400,400i,700,700i|dm-sans:400,500,700|raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|varela-round:400" rel="stylesheet" />
 </head>
-<body class="flex justify-center items-center h-[100vh] w-[100vw]">
-    <div class="flex flex-wrap m-auto w-[600px] h-[600px] ">
+<body class="flex justify-center items-center h-[100vh] w-[100vw] bg-[#3490dc] font-['DM_Sans']">
+    <div class="flex flex-wrap m-auto w-[600px] h-[600px] items-center">
         <div id="wall" class="h-[100vh] w-[100vw] fixed z-30 hidden"></div>
         <div class="flex justify-around items-around flex-wrap">
-            <p id="carte1" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte2" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte3" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte4" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte5" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte6" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte7" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
-            <p id="carte8" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain"></p>
+            <p id="carte1" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte2" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte3" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte4" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte5" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte6" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte7" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
+            <p id="carte8" class="hidden border-2 border-solid border-black block h-36 w-36 text-white bg-contain bg-[#ddd] my-4"></p>
         </div>
         <button id="start" class="m-auto border-2 border-black border-solid rounded-md py-2 px-4 bg-slate-200">Start</button>
-        <p id="win" class="hidden fixed top-[40vh] left-[47vw] font-[72px] font-bold bg-slate-200 p-8 border-2 border-solid border-black">WIN !</p>
+        <p id="win" class="hidden fixed top-[38vh] left-[43vw] text-[72px] font-bold bg-slate-200 p-8 border-2 border-solid border-black rounded-md">WIN !</p>
     </div>
     <a href="../index.html" class="fixed left-28 bottom-20 border-2 border-black border-solid rounded-md py-2 px-4 bg-slate-200">Menu</Menu></a>
 </body>

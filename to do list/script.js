@@ -15,7 +15,7 @@ function valid(){
         
         const newBtn = document.createElement('button');
         newBtn.setAttribute("class", "taskbtn");
-        newBtn.textContent = "finito";
+        newBtn.textContent = "Terminé";
         newBtn.addEventListener("click", function() {
             if (newTask.classList.contains("line-through")) {
                 liste.removeChild(newTask);
@@ -23,6 +23,7 @@ function valid(){
             }
             else {
                 newTask.classList.add("line-through");
+                newBtn.textContent = "Effacer";
             }
         })
         liste.appendChild(newBtn);
