@@ -1,25 +1,31 @@
 @import url(https://fonts.bunny.net/css?family=beth-ellen:400);
 
+
+body {
+    background-color: #3490dc;
+    font-family: 'DM Sans';
+}
 #titre{
     margin-top: 4em;
     text-align: center;
     font-size: 2rem; 
     font-weight: bolder;
+    color: white;
 }
 #citation{
     font-family: 'Beth Ellen', handwriting; 
 }
-.enbien{
+.content{
     text-align: center;
     margin-top: 8%;
 }
 #button{
     margin: 4em;
-    border: solid 1px;
-    padding: 6px;
-    border-radius: 10px;
-    background-color: black;
-    color: white;
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(226 232 240);
+    font-family: 'DM Sans';
 }
 #button:active{
     background-color: white;
@@ -35,4 +41,15 @@
     background-color: rgb(226 232 240);
     text-decoration: none;
     color: black;
+}
+.text {
+    width: 700px;
+    height: 122px;
+    background-color: white;
+    border-radius: 7px;
+    margin: auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
